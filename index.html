@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX Request</title>
+    <link rel="stylesheet" href="/style/milligram.css" />
+  </head>
+  <body class="container">
+    <table>
+      <div style="display: flex; justify-content: end">
+        <button
+          style="margin-top: 20px"
+          onclick="((e)=> e.preventDefault(),window.location.href = 'create.html')"
+        >
+          Add Item
+        </button>
+      </div>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Code</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="item-list"></tbody>
+    </table>
+    <script src="js/index.js"></script>
+    <script src="js/delete.js"></script>
+  </body>
+</html>
